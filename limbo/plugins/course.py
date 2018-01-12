@@ -7,9 +7,11 @@ except ImportError:
 import requests
 
 courses = set()
+
 for i in range(25):
     if i != 13 and i != 19 and i != 23:
         courses.add(str(i))
+
 courses = courses.union(set(('EC','ES','HST','IDS','MAS','STS','CMS','WGS','21A','21W','21M','21G','21H','21L')))
 for course in courses:
     course = str(course)
